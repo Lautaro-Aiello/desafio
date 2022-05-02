@@ -12,7 +12,10 @@ let opcion = prompt(`ELIJA QUE DESEA LLEVAR
                            BUZOS
                            CAMPERAS
                            FINALIZAR COMPRA`)
-let fin = "FINALIZAR COMPRA";                          
+let fin = "FINALIZAR COMPRA";   
+let remeras1= 1;
+let buzos2= 1;
+let camperas3= 1;
 
 while(opcion != fin)
 {
@@ -28,30 +31,29 @@ while(opcion != fin)
     {
         alert("LOS CARACTERES QUE HAS INGRESADO NO SON CORRECTOS")
     }
-    else if(opcion == "REMERAS")
+    else if(opcion == "REMERAS")  
     {
        let prendas1= Number(prompt("POR FAVOR INGRESE LA CANTIDAD QUE DESEA LLEVAR"))
-       let remeras1= 1;
        for( i=1; i<=prendas1; i++)
        {
            remeras1=remeras1 + 1;
        }
 
     }
-    else if(opcion == "BUZOS")
+
+    else if(opcion == "BUZOS")   
     {
        let prendas2= Number(prompt("POR FAVOR INGRESE LA CANTIDAD QUE DESEA LLEVAR"))
-       let buzos2= 1;
        for( i=1; i<=prendas2; i++)
        {
            buzos2=buzos2 + 1;
        }
   
     }
-    else if(opcion == "CAMPERAS")
+    else if(opcion == "CAMPERAS")  
     {
         let prendas3= Number(prompt("POR FAVOR INGRESE LA CANTIDAD QUE DESEA LLEVAR"))
-       let camperas3= 1;
+       
        for( i=1; i<=prendas3; i++)
        {
             camperas3=camperas3 + 1;
